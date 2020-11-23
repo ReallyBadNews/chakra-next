@@ -1,8 +1,8 @@
-import { Link as ChakraLink, Button } from '@chakra-ui/core'
+import { Link as ChakraLink, Button } from "@chakra-ui/core";
 
-import { Container } from './Container'
+import { Container } from "./Container";
 
-export const CTA = () => (
+export const CTA = (): any => (
   <Container
     flexDirection="row"
     position="fixed"
@@ -28,4 +28,4 @@ export const CTA = () => (
       </Button>
     </ChakraLink>
   </Container>
-)
+);

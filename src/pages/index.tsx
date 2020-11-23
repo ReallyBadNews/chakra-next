@@ -5,22 +5,22 @@ import {
   List,
   ListIcon,
   ListItem,
-} from '@chakra-ui/core'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+} from "@chakra-ui/core";
+import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import { Hero } from "../components/Hero";
+import { Container } from "../components/Container";
+import { Main } from "../components/Main";
+import { DarkModeSwitch } from "../components/DarkModeSwitch";
+import { CTA } from "../components/CTA";
+import { Footer } from "../components/Footer";
 
-const Index = () => (
+const Index = (): any => (
   <Container height="100vh">
-    <Hero />
+    <Hero title="It works!" />
     <Main>
       <Text>
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
+        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{" "}
         <Code>typescript</Code>.
       </Text>
 
@@ -47,10 +47,16 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Next ❤️ Chakra</Text>
+      <Text>
+        Next{" "}
+        <span role="img" aria-label="heart emoji">
+          ❤️
+        </span>{" "}
+        Chakra
+      </Text>
     </Footer>
     <CTA />
   </Container>
-)
+);
 
-export default Index
+export default Index;
